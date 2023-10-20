@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Solatec - Solar and Renewable Energy Template">
+  <meta name="description" content="IBGSolar - Solar and Renewable Energy">
   <title>IBG Solar - How It Works</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="assets2/IBG-SOLAR-LOGO_03.png">
@@ -22,6 +22,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    @media only screen and (max-width:1326px){
+      #quote-button-tag{
+        width:0px ;
+        overflow: hidden;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -34,7 +42,7 @@
         Header
     =========================== -->
     <header class="header header-layout1">
-      <div class="header-topbar">
+      <div class="header-topbar" >
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-12">
@@ -50,7 +58,7 @@
                   </li>
                   <li>
                     <i class="icon-location color-primary"></i>
-                    <a href="#" class="color-primary">Get Directions</a>
+                    <a href="https://www.google.com/maps/place/18%C2%B009'13.4%22N+74%C2%B033'58.7%22E/@18.153735,74.565664,17z/data=!4m4!3m3!8m2!3d18.1537222!4d74.5663056?hl=en&entry=ttu" class="color-primary">Get Directions</a>
                   </li>
                 </ul><!-- /.contact__list -->
                 <div class="d-flex align-items-center">
@@ -59,10 +67,10 @@
                     <button class="header-topbar__search-btn"><i class="fa fa-search"></i></button>
                   </form>
                   <ul class="social-icons list-unstyled mb-0 mr-20">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61552319320836"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/solaribg/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCGOI7MFDM6hzAOeSJlA0t9w"><i class="fab fa-youtube"></i></a></li>
                   </ul><!-- /.social-icons -->
                   <div class="dropdown lang-dropdown">
                     <button class="dropdown-toggle lang-dropdown-toggle" id="langDropdown" data-toggle="dropdown">
@@ -159,42 +167,17 @@
           </div><!-- /.navbar-collapse -->
           <div class="contact__number d-none d-xl-flex align-items-center">
             <i class="icon-phone"></i>
-            <a href="tel:919730856363">+91 9730856363</a>
+            <a href="tel:919730856363" style="color:#e5b105;">+91 9730856363</a>
           </div>
           <ul class="navbar-actions d-none d-xl-flex align-items-center list-unstyled mb-0">
             <li>
               <a href="#" class="action__btn action__btn-cart">
-                <i class="icon-cart"></i><span class="cart__counter">3</span>
-              </a>
-              <div class="cart-minipopup">
-                <ul class="list-unstyled">
-                  <li class="cart-item">
-                    <div class="cart__img"><img src="assets/images/products/1.jpg" alt="thumb"></div>
-                    <div class="cart__content">
-                      <a class="cart__title" href="shop-single.html">Pentair Controller</a>
-                      <span class="cart__price">$ 323.00</span>
-                      <button class="cart__delete">&times;</button>
-                    </div><!-- /.cart-item-content -->
-                  </li><!-- /.cart-item -->
-                  <li class="cart-item">
-                    <div class="cart__img"><img src="assets/images/products/2.jpg" alt="thumb"></div>
-                    <div class="cart__content">
-                      <a class="cart__title" href="shop-single.html">Solar Royal</a>
-                      <span class="cart__price">$ 259.00</span>
-                      <button class="cart__delete">&times;</button>
-                    </div><!-- /.cart-item-content -->
-                  </li><!-- /.cart-item -->
-                </ul>
-                <div class="cart-total">
-                  <span>Total:</span>
-                  <span>$582.00</span>
-                </div><!-- /.cart-subtotal -->
-                <a href="cart.html" class="btn btn__primary btn__block">View Cart</a>
-              </div><!-- /.cart-minipopup -->
+                <i class="icon-cart"></i>
+              </a><!-- /.cart-minipopup -->
             </li>
-            <li>
-              <a href="request-quote.html" class="btn btn__primary">
-                <span>Request A Quote</span>
+            <li id="quote-button-tag"> 
+              <a href="request-quote.html" class="btn btn__primary" >
+                <span class="quote-button">Request A Quote</span>
                 <i class="icon-arrow-right"></i>
               </a>
             </li>
@@ -233,12 +216,12 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-5">
-            <h2 class="heading__subtitle color-primary">Making Tomorrow Different Today.</h2>
-            <h3 class="heading__title">Energize Society With Sustainable And Reliable Energy Systems!</h3>
-            <p class="heading__desc mb-20">IBG Solar ensures clients' renewable energy projects are executed with excellence, covering development, due diligence, pre-construction, design, construction, and commissioning with a single phone call.</p>
-            <p class="heading__desc mb-20">Global solar energy demand surges due to technological advancements and public awareness. Scaling up capacity across the PV value chain is essential for meeting clean energy demand.</p>
-            <p class="heading__desc mb-20">Investing in solar manufacturing capacity, despite significant capital investment, offers numerous benefits such as meeting clean energy demand, creating job opportunities, and contributing to economic growth.</p>
-            <p class="heading__desc mb-20">IBG Solar offers a direct, one-to-one partnership for EPC and O&M solutions, backed by a strong reputation and proven systems at competitive prices.</p>
+            <h2 class="heading__subtitle color-primary">Transforming Tomorrow, Powering the Future Today.</h2>
+            <h3 class="heading__title">Bringing Sustainable and Reliable Energy Systems to Society!</h3>
+            <p class="heading__desc mb-20">IBG Solar is Your Single-Call Solution for Excellence in Renewable Energy Projects.</p>
+            <p class="heading__desc mb-20">In a world witnessing a surge in global solar energy demand, driven by technological advancements and heightened public awareness, IBG Solar stands ready as your trusted partner. We offer end-to-end project management, covering development, due diligence, pre-construction, design, construction, and commissioning – all with the simplicity of a single phone call.</p>
+            <p class="heading__desc mb-20">As we scale up capacity across the PV value chain, we recognize the vital role solar manufacturing plays. Despite the substantial capital investment required, investing in solar manufacturing not only meets the increasing clean energy demand but also generates job opportunities and contributes significantly to economic growth.</p>
+            <p class="heading__desc mb-20">At IBG Solar, we don't just provide solutions; we build direct, one-to-one partnerships. Our EPC (Engineering, Procurement, and Construction) and O&M (Operations and Maintenance) solutions are backed by a strong reputation and proven systems, all at competitive prices. With IBG Solar, you're not just investing in renewable energy; you're investing in a sustainable, reliable future.</p>
 
             <a href="services.html" class="btn btn__primary btn__outlined btn__custom mb-40">
               <i class="icon-arrow-right"></i>
@@ -252,10 +235,10 @@
               <div class="col-sm-6">
                 <div class="feature-item">
                   <div class="feature__icon">
-                    <i class="icon-hydro-power3"></i>
+                    <img src="assets/images/howitworks/helmet.png" alt="">
                   </div>
                   <h4 class="feature__title">End-To-End EPC Service Provider</h4>
-                  <p class="feature__desc">IBG Solar offers comprehensive solar solutions, covering design, engineering, construction, installation, and commissioning, making it a one-stop-shop for all your solar needs.
+                  <p class="feature__desc">IBG Solar is a one-stop-shop for all your solar needs, right from the design and engineering to construction, installation, and commissioning.
                   </p>
                 </div><!-- /.feature-item -->
               </div><!-- /.col-sm-6 -->
@@ -263,10 +246,10 @@
               <div class="col-sm-6">
                 <div class="feature-item">
                   <div class="feature__icon">
-                    <i class="icon-biosphere"></i>
+                    <img src="assets/images/howitworks/solar-panels.png" alt="">
                   </div>
                   <h4 class="feature__title">Locomotive Scale Solar Projects</h4>
-                  <p class="feature__desc">IBG Solar is a leading provider of large-scale solar projects with capacities exceeding 1 MW, specializing in handling projects of any size and complexity.
+                  <p class="feature__desc">IBG Solar specializes in large-scale solar projects with capacities of more than 1 MW. We have the expertise to handle projects of any size and complexity.
                   </p>
                 </div><!-- /.feature-item -->
               </div><!-- /.col-sm-6 -->
@@ -274,10 +257,10 @@
               <div class="col-sm-6">
                 <div class="feature-item">
                   <div class="feature__icon">
-                    <i class="icon-eco-house"></i>
+                    <img src="assets/images/howitworks/eco-house.png" alt="">
                   </div>
                   <h4 class="feature__title">Rooftop Solar Panels</h4>
-                  <p class="feature__desc">We offer rooftop solar panels on a KW or MW basis, catering to various customer types, including residential, commercial, and industrial sectors.
+                  <p class="feature__desc">We provide rooftop solar panels on a KW or MW basis, catering to all types of customers, including residential, commercial, and industrial.
                   </p>
                 </div><!-- /.feature-item -->
               </div><!-- /.col-sm-6 -->
@@ -285,10 +268,10 @@
               <div class="col-sm-6">
                 <div class="feature-item">
                   <div class="feature__icon">
-                    <i class="icon-energy2"></i>
+                    <img src="assets/images/howitworks/renewable-energy.png" alt="">
                   </div>
                   <h4 class="feature__title">Technological Solutions For Power Conservation</h4>
-                  <p class="feature__desc">IBG Solar provides advanced power conservation solutions, integrating battery storage, to optimize energy usage and reduce costs.
+                  <p class="feature__desc">: IBG Solar offers advanced technological solutions for power conservation, linked with battery storage, to optimize energy usage and reduce costs.
                   </p>
                 </div><!-- /.feature-item -->
               </div><!-- /.col-sm-6 -->
@@ -296,20 +279,20 @@
               <div class="col-sm-6">
                 <div class="feature-item">
                   <div class="feature__icon">
-                    <i class="icon-electric-car"></i>
+                    <img src="assets/images/howitworks/solar-panel.png"  alt="">
                   </div>
                   <h4 class="feature__title">Automation In Solar Plants</h4>
-                  <p class="feature__desc">We offer automation solutions for solar plants, ensuring maximum efficiency and uptime through supervision and data monitoring.
+                  <p class="feature__desc">We provide automation solutions for solar plants, including supervision and data monitoring, to ensure maximum efficiency and uptime.
                   </p>
                 </div><!-- /.feature-item -->
               </div><!-- /.col-sm-6 -->              
               <div class="col-sm-6">
                 <div class="feature-item">
                   <div class="feature__icon">
-                    <i class="icon-electric-car"></i>
+                    <img src="assets/images/howitworks/solar-energy.png" alt="">
                   </div>
                   <h4 class="feature__title">Module Mounting Structure</h4>
-                  <p class="feature__desc">IBG Solar provides top-notch module mounting structures to guarantee the safety and longevity of your solar panels.
+                  <p class="feature__desc">IBG Solar offers high-quality module mounting structures to ensure the safety and longevity of your solar panels.
                   </p>
                 </div><!-- /.feature-item -->
               </div><!-- /.col-sm-6 -->
@@ -320,7 +303,7 @@
                     <i class="icon-wind-socket"></i>
                   </div>
                   <h4 class="feature__title">O&M Services</h4>
-                  <p class="feature__desc">Our team of skilled technicians is proficient in various PV technologies, ensuring efficient operation and optimization of your renewable energy system.</p>
+                  <p class="feature__desc">Our expert team of technicians is well-versed in an assortment of PV technologies to help you operate and optimize your renewable energy system.</p>
                 </div><!-- /.feature-item -->
               </div><!-- /.col-sm-6 -->
             </div><!-- /.row -->
@@ -386,7 +369,7 @@
                 
                 <div class="heading heading-layout2">
                   <h2 class="heading__subtitle">How It Works, Step Five:</h2>
-                  <h3 class="heading__title">Ops & Maintainance</h3>
+                  <h3 class="heading__title">Operations & Maintainance</h3>
                   <p class="heading__desc">We collaborate with you to design and deliver a system that meets your
                     utility
                     usage and needs, We also selecting equipment from 66+ manufacturers so you do not have to be
@@ -427,7 +410,7 @@
         </div><!-- /.row -->
         <div class="row">
           <div class="col-12">
-            <img src="assets/images/backgrounds/map2.png" alt="map">
+            <img src="assets/images/maps/Map-01.png" alt="map">
             <!-- Testimonial #1 -->
             <div class="testimonial-box">
               <div class="testimonial__thumb">
@@ -488,51 +471,6 @@
                 </div>
               </div><!-- /.testimonial-panel -->
             </div><!-- /. testimonial-box -->
-            <!-- Testimonial #5 -->
-            <div class="testimonial-box testimonial-hover-left">
-              <div class="testimonial__thumb">
-                <img src="assets/images/testimonials/thumbs/5.png" alt="author thumb">
-                <span class="pulsing-animation pulsing-animation-1"></span>
-                <span class="pulsing-animation pulsing-animation-2"></span>
-                <span class="pulsing-animation pulsing-animation-3"></span>
-              </div><!-- /.testimonial-thumb -->
-              <div class="testimonial__panel">
-                <div class="testimonial__desc">
-                  As one of the world's largest ITService Providers with over 120 engineers and IT support staff are
-                  ready to help.
-                </div>
-              </div><!-- /.testimonial-panel -->
-            </div><!-- /. testimonial-box -->
-            <!-- Testimonial #6 -->
-            <div class="testimonial-box">
-              <div class="testimonial__thumb">
-                <img src="assets/images/testimonials/thumbs/1.png" alt="author thumb">
-                <span class="pulsing-animation pulsing-animation-1"></span>
-                <span class="pulsing-animation pulsing-animation-2"></span>
-                <span class="pulsing-animation pulsing-animation-3"></span>
-              </div><!-- /.testimonial-thumb -->
-              <div class="testimonial__panel">
-                <div class="testimonial__desc">
-                  As one of the world's largest ITService Providers with over 120 engineers and IT support staff are
-                  ready to help.
-                </div>
-              </div><!-- /.testimonial-panel -->
-            </div><!-- /. testimonial-box -->
-            <!-- Testimonial #7 -->
-            <div class="testimonial-box">
-              <div class="testimonial__thumb">
-                <img src="assets/images/testimonials/thumbs/4.png" alt="author thumb">
-                <span class="pulsing-animation pulsing-animation-1"></span>
-                <span class="pulsing-animation pulsing-animation-2"></span>
-                <span class="pulsing-animation pulsing-animation-3"></span>
-              </div><!-- /.testimonial-thumb -->
-              <div class="testimonial__panel">
-                <div class="testimonial__desc">
-                  As one of the world's largest ITService Providers with over 120 engineers and IT support staff are
-                  ready to help.
-                </div>
-              </div><!-- /.testimonial-panel -->
-            </div><!-- /. testimonial-box -->
           </div><!-- /.col-12 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -541,7 +479,7 @@
     <!-- ======================
     Cta Layout1 
     ========================= -->
-    <section class="cta-layout1 pt-0">
+    <section class="cta-layout1 pt-0 mt-30">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
@@ -605,7 +543,7 @@
                   <i class="icon-phone"></i>
                   <a href="tel:5565454117" class="color-primary">+91 9730856363</a>
                 </div><!-- /.contact__numbr -->
-                <a href="#" class="btn__location">
+                <a href="https://www.google.com/maps/place/18%C2%B009'13.4%22N+74%C2%B033'58.7%22E/@18.153735,74.565664,17z/data=!4m4!3m3!8m2!3d18.1537222!4d74.5663056?hl=en&entry=ttu" class="btn__location">
                   <i class="icon-location"></i>
                   <span>Get Directions</span>
                 </a>
@@ -617,11 +555,11 @@
                 <nav>
                   <ul class="list-unstyled">
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="leadership-team.html">Leadership Team</a></li>
+                    <li><a href="team.html">Leadership Team</a></li>
                     <li><a href="blog.html">News & Media</a></li>
-                    <li><a href="projects-grid.html">Case Studies</a></li>
+                    <li><a href="awards.html">Awards</a></li>
                     <li><a href="projects-grid.html">Our Projects</a></li>
-                    <li><a href="contacs.html">Contacts</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
@@ -631,12 +569,12 @@
               <div class="footer-widget-content">
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a href="#">Wind Generators</a></li>
-                    <li><a href="#">Solar PV Materials</a></li>
-                    <li><a href="#">Battery Materials</a></li>
-                    <li><a href="#">Refined Products</a></li>
-                    <li><a href="#">Solar Modules</a></li>
-                    <li><a href="#">Biodiesel Fuel</a></li>
+                    <li><a href="pre-feasibility.html">Pre-Feasibility</a></li>
+                    <li><a href="feasibility.html">Feasibility</a></li>
+                    <li><a href="pre-construction.html">Pre-Construction</a></li>
+                    <li><a href="construction.html">Construction</a></li>
+                    <li><a href="ops-maintainance.html">Ops & Maintainance</a></li>
+                    <li><a href="strategic-advisory.html">Strategic-Advisory</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
@@ -662,9 +600,10 @@
                   <span>Download PDF</span>
                 </a>
                 <ul class="social-icons list-unstyled">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61552319320836"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/solaribg/"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCGOI7MFDM6hzAOeSJlA0t9w"><i class="fab fa-youtube"></i></a></li>
                 </ul><!-- /.social-icons -->
               </div><!-- /.footer-widget-content -->
             </div><!-- /.col-xl-3 -->

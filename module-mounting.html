@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Solatec - Solar and Renewable Energy Template">
+  <meta name="description" content="IBGSolar - Solar and Renewable Energy">
   <title>IBG Solar - Project Details</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="assets2/IBG-SOLAR-LOGO_03.png">
@@ -22,6 +22,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+<style>
+    @media only screen and (max-width:1326px){
+      #quote-button-tag{
+        width:0px ;
+        overflow: hidden;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -34,7 +42,7 @@
         Header
     =========================== -->
     <header class="header header-layout1">
-      <div class="header-topbar">
+      <div class="header-topbar" >
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-12">
@@ -50,7 +58,7 @@
                   </li>
                   <li>
                     <i class="icon-location color-primary"></i>
-                    <a href="#" class="color-primary">Get Directions</a>
+                    <a href="https://www.google.com/maps/place/18%C2%B009'13.4%22N+74%C2%B033'58.7%22E/@18.153735,74.565664,17z/data=!4m4!3m3!8m2!3d18.1537222!4d74.5663056?hl=en&entry=ttu" class="color-primary">Get Directions</a>
                   </li>
                 </ul><!-- /.contact__list -->
                 <div class="d-flex align-items-center">
@@ -59,10 +67,10 @@
                     <button class="header-topbar__search-btn"><i class="fa fa-search"></i></button>
                   </form>
                   <ul class="social-icons list-unstyled mb-0 mr-20">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61552319320836"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/solaribg/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCGOI7MFDM6hzAOeSJlA0t9w"><i class="fab fa-youtube"></i></a></li>
                   </ul><!-- /.social-icons -->
                   <div class="dropdown lang-dropdown">
                     <button class="dropdown-toggle lang-dropdown-toggle" id="langDropdown" data-toggle="dropdown">
@@ -160,42 +168,17 @@
           </div><!-- /.navbar-collapse -->
           <div class="contact__number d-none d-xl-flex align-items-center">
             <i class="icon-phone"></i>
-            <a href="tel:919730856363">+91 9730856363</a>
+            <a href="tel:919730856363" style="color:#e5b105;">+91 9730856363</a>
           </div>
           <ul class="navbar-actions d-none d-xl-flex align-items-center list-unstyled mb-0">
             <li>
               <a href="#" class="action__btn action__btn-cart">
-                <i class="icon-cart"></i><span class="cart__counter">3</span>
-              </a>
-              <div class="cart-minipopup">
-                <ul class="list-unstyled">
-                  <li class="cart-item">
-                    <div class="cart__img"><img src="assets/images/products/1.jpg" alt="thumb"></div>
-                    <div class="cart__content">
-                      <a class="cart__title" href="shop-single.html">Pentair Controller</a>
-                      <span class="cart__price">$ 323.00</span>
-                      <button class="cart__delete">&times;</button>
-                    </div><!-- /.cart-item-content -->
-                  </li><!-- /.cart-item -->
-                  <li class="cart-item">
-                    <div class="cart__img"><img src="assets/images/products/2.jpg" alt="thumb"></div>
-                    <div class="cart__content">
-                      <a class="cart__title" href="shop-single.html">Solar Royal</a>
-                      <span class="cart__price">$ 259.00</span>
-                      <button class="cart__delete">&times;</button>
-                    </div><!-- /.cart-item-content -->
-                  </li><!-- /.cart-item -->
-                </ul>
-                <div class="cart-total">
-                  <span>Total:</span>
-                  <span>$582.00</span>
-                </div><!-- /.cart-subtotal -->
-                <a href="cart.html" class="btn btn__primary btn__block">View Cart</a>
-              </div><!-- /.cart-minipopup -->
+                <i class="icon-cart"></i>
+              </a><!-- /.cart-minipopup -->
             </li>
-            <li>
-              <a href="request-quote.html" class="btn btn__primary">
-                <span>Request A Quote</span>
+            <li id="quote-button-tag"> 
+              <a href="request-quote.html" class="btn btn__primary" >
+                <span class="quote-button">Request A Quote</span>
                 <i class="icon-arrow-right"></i>
               </a>
             </li>
@@ -227,7 +210,7 @@
     ========================= -->
     <section class="portfolio-single py-0">
       <div class="bg-img">
-        <img src="assets/images/portfolio/single/1.jpg" alt="portfolio" class="img-fluid">
+        <img src="assets/images/mounting/project_mounting_Home.jpg" alt="portfolio" class="img-fluid">
       </div>
       <div class="container">
         <div class="row">
@@ -242,9 +225,8 @@
                     <a href="#">Project Highlights</a>
                   </div><!-- /.portfolio-cat -->
                   <h2 class="portfolio__title">Module Mounting</h2>
-                  <p class="portfolio__desc">We has announced the expansion of its solar supply chain finance (SCF)
-                    program for PV module manufacturers...</p>
-                  <a href="#" class="btn btn__link btn__primary">
+                  <p class="portfolio__desc">Module Mounting refers to the installation of solar panels on rooftops of residential, commercial, and industrial buildings.</p>
+                  <a href="contact-us.html" class="btn btn__link btn__primary">
                     <i class="icon-arrow-right"></i>
                     <span>Schedule A Visit</span>
                   </a>
@@ -264,21 +246,22 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6">
             <span class="text__block-subtitle">Overview!</span>
-            <h5 class="text__block-title">India added 11 GW of utility-scale solar capacity in 2022: Study
+            <h5 class="text__block-title">Module Mounting:
             </h5>
           </div>
         </div><!-- /.row -->
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6">
-            <p class="text__block-desc">Solar energy contributed for 52 per cent share in the total renewable energy. New Delhi: From January 2022 till December 2022, 13,956 MW solar capacity and 
-                1,847 MW of wind capacity was added in India, which was about 17.5 per cent and 26.6 per cent, respectively, higher compared to 2021,according to a recent analysis.</p>
-            <p class="text__block-desc">In terms of cumulative installations, according to the data released by the Mini stry of New and Renewable Energy till December 2022, India’s green energy capacity reached 120.85 GW, said JMK Research in its study on Friday.</p>
-            <p class="text__block-desc">It added that solar energy contributed for 52 per cent share in the total renewable energy segment, making it the major contributor followed by wind energy with ble energy segment, making it the major contributor followed by wind energy with
-                35 per cent, bio power with 9 per cent, and small hydro with 4 per cent share.
-            </p>
+            <p class="text__block-desc">The Module Mounting shall be made of Hot dip GI/Anodized Aluminium material and the structureshall support SPV modules at a given orientation, absorb and transfer the mechanicalload to the roof uniformly. 
+            There should be no requirement of welding or complexheavy machinery at site. The array structure should be designed in such a way that itwill occupy minimum space without sacrificing the output from SPV panels and shouldbe able to withstand heavy winds.</p>
+            <p class="text__block-desc">In case Module Mounting is made of hot dip galvanized, the main frames and complete legassemblies of the array structures shall be made of MS hot dip galvanized. Thickness ofthe galvanization shall be as per IS-4759. In case the Module Mounting is of Aluminium type, anodiccoating of AC25 grade as per IS :1868 is to be done.</p>
+            <p class="text__block-desc">The Module Mounting should be designed and fabricated as per site condition. It should be properly earthed and should be designed to withstand Seismic criteria as per IS1893The Module Mounting should be able to withstand extreme weather conditions in the area and awind speed of 200kmph.</p>
+            
           </div><!-- /.col-lg-6 -->
           <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
-            <p class="text__block-desc">Utility-scale solar power, which has been generating clean electricity with stable prices for decades, can be developed to balance environmental protection with energy demands and climate goals. Policies to accelerate growth can create jobs and diversify India's energy portfolio, while reducing carbon emissions and paving the way for a clean energy future.</p>
+            <p class="text__block-desc">All the nuts, bolts and other fasteners used should be of stainless steel (minimum gradeSS 304). The nuts and bolts should be tightened using torque wrench.</p>
+            <p class="text__block-desc">There should be provision to adjust Module Mounting at 3 angular positions for seasonal tiltadjustment. The locking arrangement for adjusting the angle of the module shall beeasily accessible from the roof.</p>
+            
             <p class="text__block-desc"><b>Our scope of works includes:</b>
                 <ul>
                     <li>Review of key technologies (PV modules, inverters, transformer)</li>
@@ -304,23 +287,20 @@
           <div class="col-12">
             <div class="slick-carousel carousel-arrows-light"
               data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "arrows": true, "dots": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
-              <a class="popup-gallery-item" href="assets/images/gallery/1.jpg">
-                <img src="assets/images/gallery/1.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/mounting/project_mounting 1.jpg">
+                <img src="assets/images/mounting/project_mounting 1.jpg" alt="gallery img">
               </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/2.jpg">
-                <img src="assets/images/gallery/2.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/mounting/project_mounting 2.jpg">
+                <img src="assets/images/mounting/project_mounting 2.jpg" alt="gallery img">
               </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/3.jpg">
-                <img src="assets/images/gallery/3.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/mounting/project_mounting 3.jpg">
+                <img src="assets/images/mounting/project_mounting 3.jpg" alt="gallery img">
               </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/4.jpg">
-                <img src="assets/images/gallery/4.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/mounting/project_mounting 4.jpg">
+                <img src="assets/images/mounting/project_mounting 4.jpg" alt="gallery img">
               </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/5.jpg">
-                <img src="assets/images/gallery/5.jpg" alt="gallery img">
-              </a>
-              <a class="popup-gallery-item" href="assets/images/gallery/6.jpg">
-                <img src="assets/images/gallery/6.jpg" alt="gallery img">
+              <a class="popup-gallery-item" href="assets/images/mounting/project_mounting 5.jpg">
+                <img src="assets/images/mounting/project_mounting 5.jpg" alt="gallery img">
               </a>
             </div><!-- /.gallery-images-wrapper -->
           </div><!-- /.col-lg-12 -->
@@ -331,50 +311,19 @@
     <!-- ======================
      Text Content
     ========================= -->
-    <section class="pb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <span class="text__block-subtitle">Challenge!</span>
-            <h5 class="text__block-title">Proven Record Of The High Performance & Reliability</h5>
-          </div>
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <p class="text__block-desc">Bifacial solar modules enable EPCs, installers, contractors and solar PV
-              developers to maximize power density, with dual-side light capture resulting in increased power output at
-              a lower cost. Delivering an attractive design, low-degradation and maximum power density, the bifacial
-              modules we supply are made from high-purity silicon to ensure superior cell efficiency and lifespan.
-            </p>
-            <p class="text__block-desc">Bifacial panels are eligible for Targray’s flexible wholesale solar financing
-              platform, designed to help businesses of all sizes preserve their working capital, unlock value and
-              accelerate growth. By leveraging Targray Group’s robust financing facility and our decades-long
-              partnerships with leading international PV manufacturers, we’re able to create tailored supply chains </p>
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
-            <ul class="list-items list-unstyled mb-30">
-              <li>Resulting in 30% increased power output at lower cost.</li>
-              <li>Designed for extreme weather conditions (snow, wind).</li>
-              <li>Manufactured from superior-grade silicon for cell efficiency.</li>
-              <li>Up to 50 years life span; by 25 year product guarantee.</li>
-              <li>Virtual absence of potential induced degradation (PID).</li>
-              <li>Designed and engineered in Egypt.</li>
-            </ul>
-          </div>
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Text Content -->
 
     <!-- ======================
       counters
     ========================= -->
+    <br>
+    <br>
     <section class="counters pt-0 pb-100">
       <div class="container">
         <div class="row">
           <!-- counter item #1 -->
           <div class="col-6 col-sm-3">
             <div class="counter-item">
-              <h4 class="counter">6,154</h4>
+              <h4 class="counter">66</h4>
               <p class="counter__desc">Projects Completed In Last 5 Years</p>
               <div class="divider__line"></div>
             </div>
@@ -382,7 +331,7 @@
           <!-- counter item #2 -->
           <div class="col-6 col-sm-3">
             <div class="counter-item">
-              <h4 class="counter">2,512</h4>
+              <h4 class="counter">127</h4>
               <p class="counter__desc">Qualified Employees & Workers With Us</p>
               <div class="divider__line"></div>
             </div>
@@ -390,7 +339,7 @@
           <!-- counter item #3 -->
           <div class="col-6 col-sm-3">
             <div class="counter-item">
-              <h4 class="counter">1,784</h4>
+              <h4 class="counter">84</h4>
               <p class="counter__desc">Happy Customers Who Trusted Us</p>
               <div class="divider__line"></div>
             </div>
@@ -398,7 +347,7 @@
           <!-- counter item #4 -->
           <div class="col-6 col-sm-3">
             <div class="counter-item">
-              <h4 class="counter">0,241</h4>
+              <h4 class="counter">1</h4>
               <p class="counter__desc">Awards Milestones Awarded To Us</p>
               <div class="divider__line"></div>
             </div>
@@ -410,150 +359,11 @@
     <!-- ======================
     Features Layout 1
     ========================= -->
-    <section class="features-layout1 pt-120 pb-80">
-      <div class="bg-img"><img src="assets/images/backgrounds/3.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row mb-40">
-          <div class="col-12">
-            <h2 class="heading__subtitle color-primary">Making Tomorrow Different Today.</h2>
-          </div><!-- /col-12 -->
-          <div class="col-sm-12 col-md-12 col-lg-5">
-            <h3 class="heading__title color-white">Energize Society With Sustainable And Reliable Energy Systems!</h3>
-          </div><!-- /col-lg-5 -->
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
-            <p class="heading__desc color-gray mb-20">In recent years, new capacity across the solar value chain has
-              become
-              necessary to support the PV market’s growth. However, the capital required to establish and scale-up
-              wafer, solar cell and solar module manufacturing facilities is considerable. </p>
-            <p class="heading__desc color-gray mb-30">Together, these factors pose a serious challenge to sustainable
-              operation and growth of global solar manufacturers.</p>
-            <a href="#" class="btn btn__primary btn__outlined btn__custom">
-              <i class="icon-arrow-right"></i>
-              <span>Explore All Features!</span>
-            </a>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-12">
-            <div class="slick-carousel"
-              data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "arrows": false, "dots": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 3, "slidesToScroll": 3}}, {"breakpoint": 767, "settings": {"slidesToShow": 1, "slidesToScroll": 1}}]}'>
-              <!-- Feature item #1 -->
-              <div class="feature-item">
-                <div class="feature__icon">
-                  <i class="icon-hydro-power3"></i>
-                </div>
-                <h4 class="feature__title">Save Your Money</h4>
-                <p class="feature__desc">Save money on utilities or increase the value of your home by installing solar
-                </p>
-                <a href="#" class="btn__link">
-                  <i class="icon-arrow-right icon-filled"></i>
-                  <span>Explore More</span>
-                </a>
-              </div><!-- /.feature-item -->
-              <!-- Feature item #2 -->
-              <div class="feature-item">
-                <div class="feature__icon">
-                  <i class="icon-eco-house"></i>
-                </div>
-                <h4 class="feature__title">Your Home Is Energy</h4>
-                <p class="feature__desc">Everyday the sun provides us with abundance of free energy by placing solar
-                </p>
-                <a href="#" class="btn__link">
-                  <i class="icon-arrow-right icon-filled"></i>
-                  <span>Explore More</span>
-                </a>
-              </div><!-- /.feature-item -->
-              <!-- Feature item #3 -->
-              <div class="feature-item">
-                <div class="feature__icon">
-                  <i class="icon-energy2"></i>
-                </div>
-                <h4 class="feature__title">Consult & Planning</h4>
-                <p class="feature__desc">Our remote industrial solar systems are designed to reliably power our clients
-                </p>
-                <a href="#" class="btn__link">
-                  <i class="icon-arrow-right icon-filled"></i>
-                  <span>Explore More</span>
-                </a>
-              </div><!-- /.feature-item -->
-              <!-- Feature item #4 -->
-              <div class="feature-item">
-                <div class="feature__icon">
-                  <i class="icon-electric-car"></i>
-                </div>
-                <h4 class="feature__title">Certified Engineers</h4>
-                <p class="feature__desc">Our sales engineers on our staff have experience and can design any complete
-                </p>
-                <a href="#" class="btn__link">
-                  <i class="icon-arrow-right icon-filled"></i>
-                  <span>Explore More</span>
-                </a>
-              </div><!-- /.feature-item -->
-              <!-- Feature item #5 -->
-              <div class="feature-item">
-                <div class="feature__icon">
-                  <i class="icon-eco-house"></i>
-                </div>
-                <h4 class="feature__title">Your Home Is Energy</h4>
-                <p class="feature__desc">Everyday the sun provides us with abundance of free energy by placing solar
-                </p>
-                <a href="#" class="btn__link">
-                  <i class="icon-arrow-right icon-filled"></i>
-                  <span>Explore More</span>
-                </a>
-              </div><!-- /.feature-item -->
-              <!-- Feature item #6 -->
-              <div class="feature-item">
-                <div class="feature__icon">
-                  <i class="icon-energy2"></i>
-                </div>
-                <h4 class="feature__title">Consult & Planning</h4>
-                <p class="feature__desc">Our remote industrial solar systems are designed to reliably power our clients
-                </p>
-                <a href="#" class="btn__link">
-                  <i class="icon-arrow-right icon-filled"></i>
-                  <span>Explore More</span>
-                </a>
-              </div><!-- /.feature-item -->
-              <!-- Feature item #7 -->
-              <div class="feature-item">
-                <div class="feature__icon">
-                  <i class="icon-electric-car"></i>
-                </div>
-                <h4 class="feature__title">Certified Engineers</h4>
-                <p class="feature__desc">Our sales engineers on our staff have experience and can design any complete
-                </p>
-                <a href="#" class="btn__link">
-                  <i class="icon-arrow-right icon-filled"></i>
-                  <span>Explore More</span>
-                </a>
-              </div><!-- /.feature-item -->
-            </div><!-- /.carousel-->
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="read-note d-flex flex-wrap mt-60">
-              <div class="rating mb-10 mr-50">
-                <i class="fas fa-star color-primary"></i>
-                <i class="fas fa-star color-primary"></i>
-                <i class="fas fa-star color-primary"></i>
-                <i class="fas fa-star color-primary"></i>
-                <i class="fas fa-star color-primary"></i>
-              </div>
-              <p class="read-note__text">
-                <span class="font-weight-bold text-underlined-primary color-primary">99.9% Customer Satisfaction</span>
-                based on 750+ reviews and 20,000 Objective Resource
-              </p>
-            </div>
-          </div>
-        </div>
-      </div><!-- /.container -->
-    </section><!-- /.Features Layout 1 -->
 
     <!-- =========================
        Banner layout 1
       =========================== -->
+      <br>
     <section class="banner-layout1 pt-0 pb-120">
       <div class="container">
         <div class="row">
@@ -565,7 +375,7 @@
                   us to provide in-depth material sourcing, financing and supply chain expertise for every step.</p>
               </div><!-- /.banner__text -->
               <ul class="list-items list-items-layout2 list-unstyled mb-0">
-                <li>Professional on-site service and support for certification.</li>
+                <li>Committed to becoming the top service provider in the renewable construction industry.</li>
                 <li>Regular light source for stable conversion efficiency.</li>
                 <li>Lowest LID by periodic monitoring & superior wafer.</li>
               </ul>
@@ -573,7 +383,7 @@
           </div><!-- /.col-lg-7 -->
           <div class="col-sm-12 col-md-12 col-lg-5">
             <div class="img-block">
-              <img src="assets/images/banners/1.png" alt="banner">
+              <img src="assets/images/home/beautiful-alternative-energy-plant-with-solar-panels.jpg" style="border-radius: 3rem;" alt="banner">
             </div><!-- /.img-block -->
           </div><!-- /.col-lg-5 -->
         </div><!-- /.row -->
@@ -583,78 +393,23 @@
     <!-- ======================
      Text Content
     ========================= -->
-    <section class="bg-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-5">
-            <h2 class="heading__subtitle color-primary">Our Recommendations</h2>
-            <h3 class="heading__title">Mono, Multi & Bi-Facial Solar Cell Products</h3>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <p class="heading__desc mb-30">Bifacial panels are eligible for flexible wholesale solar financing
-              platform,
-              designed to help businesses of all sizes preserve their working capital, unlock value and accelerate
-              growth. By leveraging robust financing facility and our decades-long partnerships with leading
-              international PV manufacturers.</p>
-            <p class="heading__desc">We’re able to create tailored supply chains solutions backed by flexible terms
-              not offered by solar distributors or commercial banks.</p>
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
-            <p class="heading__desc mb-30">Suitable for commercial, residential and utility-scale projects, our bifacial
-              panels are supported by supply chain management. For detailed product specifications, consult our Solar
-              Division.</p>
-            <a href="request-quote.html" class="btn btn__primary">
-              <i class="icon-arrow-right"></i><span>Explore All Plans</span>
-            </a>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-12">
-            <ul class="portfolio__meta-list d-flex flex-wrap list-unstyled mt-80 mb-0">
-              <li>
-                <span class="meta__name">Power</span>
-                <span class="meta__desc">5,54 KWp</span>
-              </li>
-              <li>
-                <span class="meta__name">Price</span>
-                <span class="meta__desc">$ 14,600</span>
-              </li>
-              <li>
-                <span class="meta__name">Yearly Output</span>
-                <span class="meta__desc">6,721 KWh</span>
-              </li>
-              <li>
-                <span class="meta__name">Monthly</span>
-                <span class="meta__desc">$ 146</span>
-              </li>
-              <li>
-                <span class="meta__name">Price</span>
-                <span class="meta__desc">$ 14,600</span>
-              </li>
-            </ul><!-- /.portfolio__meta-list -->
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Text Content -->
 
     <!-- =========================
        Banner layout 2
       =========================== -->
     <section class="banner-layout2 pt-130 pb-130">
       <div class="bg-img">
-        <img src="assets/images/banners/12.jpg" alt="background">
+        <img src="assets/images/home/solar-farm-field-with-sunset-background.jpg" alt="background">
       </div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
             <div class="text-block">
               <div class="slick-carousel"
-                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows": true, "dots": false'>
+                data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows": true, "dots": false}'>
                 <div class="heading heading-layout2">
                   <h2 class="heading__subtitle">How It Works, Step One:</h2>
-                  <h3 class="heading__title">We Design & Ship.</h3>
+                  <h3 class="heading__title">Pre-Feasibility</h3>
                   <p class="heading__desc">We collaborate with you to design and deliver a system that meets your
                     utility
                     usage and needs, We also selecting equipment from 66+ manufacturers so you do not have to be
@@ -663,12 +418,57 @@
                 </div>
                 <div class="heading heading-layout2">
                   <h2 class="heading__subtitle">How It Works, Step Two:</h2>
-                  <h3 class="heading__title">Contract Or Install</h3>
+                  <h3 class="heading__title">Feasibility</h3>
                   <p class="heading__desc">We collaborate with you to design and deliver a system that meets your
                     utility
                     usage and needs, We also selecting equipment from 66+ manufacturers so you do not have to be
                     worried
-                    or compromise with your money or with your effort.</p>
+                    or compromise with your money or with your effort.
+                  </p>
+                </div>
+                
+                <div class="heading heading-layout2">
+                  <h2 class="heading__subtitle">How It Works, Step Three:</h2>
+                  <h3 class="heading__title">Pre-Construction</h3>
+                  <p class="heading__desc">We collaborate with you to design and deliver a system that meets your
+                    utility
+                    usage and needs, We also selecting equipment from 66+ manufacturers so you do not have to be
+                    worried
+                    or compromise with your money or with your effort.
+                  </p>
+                </div>
+                
+                <div class="heading heading-layout2">
+                  <h2 class="heading__subtitle">How It Works, Step Four:</h2>
+                  <h3 class="heading__title">Construction</h3>
+                  <p class="heading__desc">We collaborate with you to design and deliver a system that meets your
+                    utility
+                    usage and needs, We also selecting equipment from 66+ manufacturers so you do not have to be
+                    worried
+                    or compromise with your money or with your effort.
+                  </p>
+                </div>
+                
+                <div class="heading heading-layout2">
+                  <h2 class="heading__subtitle">How It Works, Step Five:</h2>
+                  <h3 class="heading__title">Operations & Maintainance</h3>
+                  <p class="heading__desc">We collaborate with you to design and deliver a system that meets your
+                    utility
+                    usage and needs, We also selecting equipment from 66+ manufacturers so you do not have to be
+                    worried
+                    or compromise with your money or with your effort.
+                  </p>
+                </div>
+                
+                <div class="heading heading-layout2">
+                  <h2 class="heading__subtitle">How It Works, Step Six:</h2>
+                  <h3 class="heading__title">Strategic Advisory</h3>
+                  <p class="heading__desc">We collaborate with you to design and deliver a system that meets your
+                    utility
+                    usage and needs, We also selecting equipment from 66+ manufacturers so you do not have to be
+                    worried
+                    or compromise with your money or with your effort.
+                  </p>
                 </div>
               </div>
             </div><!-- /.text-block -->
@@ -677,159 +477,7 @@
       </div><!-- /.container -->
     </section><!-- /.Banner layout 2 -->
 
-    <!-- ======================
-     Text Content
-    ========================= -->
-    <section class="pb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-5">
-            <h2 class="heading__subtitle color-primary">Results</h2>
-            <h3 class="heading__title">Mono, Multi & Bi-Facial Solar Cell Products</h3>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <p class="heading__desc mb-30">Bifacial panels are eligible for flexible wholesale solar financing
-              platform,
-              designed to help businesses of all sizes preserve their working capital, unlock value and accelerate
-              growth. By leveraging robust financing facility and our decades-long partnerships with leading
-              international PV manufacturers.</p>
-            <p class="heading__desc">We’re able to create tailored supply chains solutions backed by flexible terms
-              not offered by solar distributors or commercial banks.</p>
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
-            <div class="row">
-              <!-- fancybox item #1 -->
-              <div class="col-sm-4">
-                <div class="fancybox-item">
-                  <div class="fancybox__icon">
-                    <i class="icon-biosphere2"></i>
-                  </div><!-- /.fancybox-icon -->
-                  <div class="fancybox__content">
-                    <h4 class="fancybox__title mb-0">Environmental Sensitivity</h4>
-                  </div><!-- /.fancybox-content -->
-                </div><!-- /.fancybox-item -->
-              </div><!-- /.col-sm-4 -->
-              <!-- fancybox item #2 -->
-              <div class="col-sm-4">
-                <div class="fancybox-item">
-                  <div class="fancybox__icon">
-                    <i class="icon-tube"></i>
-                  </div><!-- /.fancybox-icon -->
-                  <div class="fancybox__content">
-                    <h4 class="fancybox__title mb-0">Personalised Solutions</h4>
-                  </div><!-- /.fancybox-content -->
-                </div><!-- /.fancybox-item -->
-              </div><!-- /.col-sm-4 -->
-              <!-- fancybox item #3 -->
-              <div class="col-sm-4">
-                <div class="fancybox-item">
-                  <div class="fancybox__icon">
-                    <i class="icon-electric-charge"></i>
-                  </div><!-- /.fancybox-icon -->
-                  <div class="fancybox__content">
-                    <h4 class="fancybox__title mb-0">Performance Measures</h4>
-                  </div><!-- /.fancybox-content -->
-                </div><!-- /.fancybox-item -->
-              </div><!-- /.col-sm-4 -->
-            </div>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row testimonials-layout2">
-          <div class="col-12">
-            <div class="testimonials-wrapper">
-              <div class="slick-carousel gutter-20"
-                data-slick='{"slidesToShow": 2, "arrows": false, "dots": true, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
-                <!-- Testimonial #1 -->
-                <div class="testimonial-item d-flex">
-                  <div class="testimonial__thumb">
-                    <img src="assets/images/testimonials/thumbs/1.png" alt="thumb">
-                  </div><!-- /.testimonial__thumb -->
-                  <div>
-                    <div class="testimonial__rating d-flex align-items-center">
-                      <div class="mr-20">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </div>
-                      <strong class="color-primary">Perfect Choice!!</strong>
-                    </div><!-- /.testimonial__rating -->
-                    <h4 class="testimonial__desc">They were fantastic through the entire purchase process. I had lots of
-                      questions and they were patient. My system arrived it was well packed and shipping with xpo.
-                    </h4>
-                    <div class="testimonial__meta">
-                      <h4 class="testimonial__meta-title">Ahmed Abdallah</h4>
-                      <p class="testimonial__meta-desc">Front End Developer</p>
-                    </div><!-- /.testimonial-meta -->
-                  </div>
-                </div><!-- /. testimonial-item -->
-                <!-- Testimonial #2 -->
-                <div class="testimonial-item d-flex">
-                  <div class="testimonial__thumb">
-                    <img src="assets/images/testimonials/thumbs/2.png" alt="thumb">
-                  </div><!-- /.testimonial__thumb -->
-                  <div>
-                    <div class="testimonial__rating d-flex align-items-center">
-                      <div class="mr-20">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </div>
-                      <strong class="color-primary">Excellent!!</strong>
-                    </div><!-- /.testimonial__rating -->
-                    <h4 class="testimonial__desc">They helped lead me through the process of system selection, site
-                      layout
-                      and placing my order. They were very knowledgeable and has provided guidance each step.
-                    </h4>
-                    <div class="testimonial__meta">
-                      <h4 class="testimonial__meta-title">John Peter</h4>
-                      <p class="testimonial__meta-desc">pro systems</p>
-                    </div><!-- /.testimonial-meta -->
-                  </div>
-                </div><!-- /. testimonial-item -->
-                <!-- Testimonial #3 -->
-                <div class="testimonial-item d-flex">
-                  <div class="testimonial__thumb">
-                    <img src="assets/images/testimonials/thumbs/3.png" alt="thumb">
-                  </div><!-- /.testimonial__thumb -->
-                  <div>
-                    <div class="testimonial__rating d-flex align-items-center">
-                      <div class="mr-20">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                      </div>
-                      <strong class="color-primary">Perfect Choice!!</strong>
-                    </div><!-- /.testimonial__rating -->
-                    <h4 class="testimonial__desc">They were fantastic through the entire purchase process. I had lots of
-                      questions and they were patient. My system arrived it was well packed and shipping with xpo.
-                    </h4>
-                    <div class="testimonial__meta">
-                      <h4 class="testimonial__meta-title">Ahmed Abdallah</h4>
-                      <p class="testimonial__meta-desc">Digital Media Manager</p>
-                    </div><!-- /.testimonial-meta -->
-                  </div>
-                </div><!-- /. testimonial-item -->
-              </div><!-- /.carousel -->
-            </div>
-            <ul class="social-icons justify-content-center mt-40 mb-40 list-unstyled">
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            </ul>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Text Content -->
-
-    <!-- =========================== 
+    <!-- ====================== 
       portfolio Grid 
     ============================= -->
     <section class="portfolio-grid pt-50 pb-50 border-top">
@@ -837,7 +485,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
             <div class="heading text-center mb-40">
-              <h2 class="heading__title fz-25">Related Projects</h2>
+              <h2 class="heading__title fz-25">More Projects</h2>
             </div><!-- /heading -->
           </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
@@ -846,12 +494,12 @@
           <div class="col-sm-12 col-md-4 col-lg-4">
             <div class="portfolio-item">
               <div class="portfolio__img">
-                <img src="assets/images/portfolio/grid/1.jpg" alt="portfolio img">
+                <img src="assets/images/projects/project_Adani Home.jpg" alt="portfolio img">
               </div><!-- /.portfolio-img -->
               <div class="portfolio__body">
-                <h4 class="portfolio__title"><a href="#">The Fallingwater House</a></h4>
+                <h4 class="portfolio__title"><a href="Adani-Solar-Project.html">Adani-Solar-Project</a></h4>
                 <div class="portfolio__cat">
-                  <a href="#">Building</a><a href="#">Interior</a>
+                  <a href="Adani-Solar-Project.html">Project Highlights</a>
                 </div><!-- /.portfolio-cat -->
               </div><!-- /.portfolio-content -->
             </div><!-- /.portfolio-item -->
@@ -860,12 +508,12 @@
           <div class="col-sm-12 col-md-4 col-lg-4">
             <div class="portfolio-item">
               <div class="portfolio__img">
-                <img src="assets/images/portfolio/grid/2.jpg" alt="portfolio img">
+                <img src="assets/images/rooftop/project_Rooftop_Home.jpg" alt="portfolio img">
               </div><!-- /.portfolio-img -->
               <div class="portfolio__body">
-                <h4 class="portfolio__title"><a href="#">The Guggenheim Museum</a></h4>
+                <h4 class="portfolio__title"><a href="rooftop-solar.html">Rooftop Solar</a></h4>
                 <div class="portfolio__cat">
-                  <a href="#">Construction</a><a href="#">Engineering</a>
+                  <a href="rooftop-solar.html">Project Highlights</a>
                 </div><!-- /.portfolio-cat -->
               </div><!-- /.portfolio-content -->
             </div><!-- /.portfolio-item -->
@@ -874,12 +522,12 @@
           <div class="col-sm-12 col-md-4 col-lg-4">
             <div class="portfolio-item">
               <div class="portfolio__img">
-                <img src="assets/images/portfolio/grid/3.jpg" alt="portfolio img">
+                <img src="assets/images/projects/project-44.jpg" alt="portfolio img">
               </div><!-- /.portfolio-img -->
               <div class="portfolio__body">
-                <h4 class="portfolio__title"><a href="#">Neue National Galerie</a></h4>
+                <h4 class="portfolio__title"><a href="automation-in-solar-plants.html">Automation In Solar Plants</a></h4>
                 <div class="portfolio__cat">
-                  <a href="#">Renovation</a><a href="#">Architecture</a>
+                  <a href="automation-in-solar-plants.html">Project Highlights</a>
                 </div><!-- /.portfolio-cat -->
               </div><!-- /.portfolio-content -->
             </div><!-- /.portfolio-item -->
@@ -906,7 +554,7 @@
                   <i class="icon-phone"></i>
                   <a href="tel:5565454117" class="color-primary">+91 9730856363</a>
                 </div><!-- /.contact__numbr -->
-                <a href="#" class="btn__location">
+                <a href="https://www.google.com/maps/place/18%C2%B009'13.4%22N+74%C2%B033'58.7%22E/@18.153735,74.565664,17z/data=!4m4!3m3!8m2!3d18.1537222!4d74.5663056?hl=en&entry=ttu" class="btn__location">
                   <i class="icon-location"></i>
                   <span>Get Directions</span>
                 </a>
@@ -918,11 +566,11 @@
                 <nav>
                   <ul class="list-unstyled">
                     <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="leadership-team.html">Leadership Team</a></li>
+                    <li><a href="team.html">Leadership Team</a></li>
                     <li><a href="blog.html">News & Media</a></li>
-                    <li><a href="projects-grid.html">Case Studies</a></li>
+                    <li><a href="awards.html">Awards</a></li>
                     <li><a href="projects-grid.html">Our Projects</a></li>
-                    <li><a href="contacs.html">Contacts</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
@@ -932,12 +580,12 @@
               <div class="footer-widget-content">
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a href="#">Wind Generators</a></li>
-                    <li><a href="#">Solar PV Materials</a></li>
-                    <li><a href="#">Battery Materials</a></li>
-                    <li><a href="#">Refined Products</a></li>
-                    <li><a href="#">Solar Modules</a></li>
-                    <li><a href="#">Biodiesel Fuel</a></li>
+                    <li><a href="pre-feasibility.html">Pre-Feasibility</a></li>
+                    <li><a href="feasibility.html">Feasibility</a></li>
+                    <li><a href="pre-construction.html">Pre-Construction</a></li>
+                    <li><a href="construction.html">Construction</a></li>
+                    <li><a href="ops-maintainance.html">Ops & Maintainance</a></li>
+                    <li><a href="strategic-advisory.html">Strategic-Advisory</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget-content -->
@@ -963,9 +611,10 @@
                   <span>Download PDF</span>
                 </a>
                 <ul class="social-icons list-unstyled">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61552319320836"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/solaribg/"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCGOI7MFDM6hzAOeSJlA0t9w"><i class="fab fa-youtube"></i></a></li>
                 </ul><!-- /.social-icons -->
               </div><!-- /.footer-widget-content -->
             </div><!-- /.col-xl-3 -->

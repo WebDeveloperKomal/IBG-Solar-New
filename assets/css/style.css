@@ -86,7 +86,7 @@ a:hover {
   text-decoration: none;
 }
 
-section {
+#section {
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -651,7 +651,7 @@ select {
 
 /* Medium Devices */
 @media (min-width: 768px) and (max-width: 991px) {
-  section {
+  #section {
     padding-top: 75px;
     padding-bottom: 75px;
   }
@@ -819,7 +819,7 @@ select {
 
 /* Mobile Phones and tablets */
 @media (min-width: 320px) and (max-width: 767px) {
-  section {
+  #section {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -4061,8 +4061,8 @@ textarea.form-control {
 
 .footer-copyrights {
   background-color: #121212;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
 
 .footer-copyrights p {
@@ -6193,23 +6193,23 @@ textarea.form-control {
 }
 
 .testimonial-box:nth-of-type(1) {
-  top: 18%;
-  left: 5%;
+  top: 46%;
+  left: 31%;
 }
 
 .testimonial-box:nth-of-type(2) {
-  top: 58%;
-  left: 23%;
+  top: 60%;
+  left: 35%;
 }
 
 .testimonial-box:nth-of-type(3) {
   top: 50%;
-  left: 46%;
+  left: 56%;
 }
 
 .testimonial-box:nth-of-type(4) {
-  top: 9%;
-  left: 65%;
+  top: 76%;
+  left: 37%;
 }
 
 .testimonial-box:nth-of-type(5) {
@@ -8033,23 +8033,23 @@ textarea.form-control {
 }
 
 .banner-layout3 .fancybox-item:nth-of-type(1) {
-  top: 20%;
-  left: 14%;
+  top: 50%;
+  left: 32%;
 }
 
 .banner-layout3 .fancybox-item:nth-of-type(2) {
-  top: 68%;
-  left: 46%;
+  top: 64%;
+  left: 36%;
 }
 
 .banner-layout3 .fancybox-item:nth-of-type(3) {
-  top: 25%;
-  left: 31%;
+  top: 80%;
+  left: 38%;
 }
 
 .banner-layout3 .fancybox-item:nth-of-type(4) {
-  top: 9%;
-  left: 55%;
+  top: 53%;
+  left: 58.5%;
 }
 
 .banner-layout3 .fancybox-item:nth-of-type(5) {
@@ -8303,6 +8303,7 @@ textarea.form-control {
   .banner-layout3 .map-container {
     position: absolute;
     right: 0;
+    left: 450px;
   }
   .banner-layout4 .soultions-carousel {
     margin-right: -70px;
