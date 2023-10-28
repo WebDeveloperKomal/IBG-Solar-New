@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="IBGSolar - Solar and Renewable Energy">
-  <title>IBG Solar - Demo</title>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Rubik:400,500,600,700%7cRoboto:400,500,700&display=swap">
-  <link rel="stylesheet" href="assets/css/libraries.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>IBG Solar - About Us</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="assets2/IBG-SOLAR-LOGO_03.png">
   <style>
@@ -19,7 +15,44 @@
         width:0px ;
         overflow: hidden;
       }
-    }    
+    }
+    @media screen and (max-width:475px){
+      .feature__title{
+        height: 40px;
+      }
+      .feature__desc{
+        height: 100px !important;
+      }
+    }
+    @media screen and (min-width:773px) and (max-width:1185px){
+      .feature__title{
+        height: 40px;
+      }
+      .feature__desc{
+        height: 250px !important;
+      }
+    }
+    @media only screen and (min-width:1185px){
+      .feature__title{
+        height: 40px;
+      }
+      .feature__desc{
+        height: 200px !important;
+      }
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rubik:400,500,600,700%7cRoboto:400,500,700&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" href="assets/css/libraries.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    @media only screen and (max-width:1326px){
+      #quote-button-tag{
+        width:0px ;
+        overflow: hidden;
+      }
+    }
   </style>
 </head>
 
@@ -40,11 +73,11 @@
               <div class="d-flex align-items-center justify-content-between">
                 <ul class="contact__list d-flex flex-wrap align-items-center list-unstyled mb-0">
                   <li>
-                    <i class="icon-mail"></i>
+                    <i class="icon-mail" style="color: #e5b105;"></i>
                     <a href="mailto:contact@ibgsolar.com">Email: contact@ibgsolar.com</a>
                   </li>
                   <li>
-                    <i class="icon-clock"></i>
+                    <i class="icon-clock" style="color: #e5b105;"></i>
                     <a href="contact-us.html">Mon - sat: 9:30 am - 6:30 pm</a>
                   </li>
                   <li>
@@ -65,7 +98,7 @@
                   </ul><!-- /.social-icons -->
                   <div class="dropdown lang-dropdown">
                     <button class="dropdown-toggle lang-dropdown-toggle" id="langDropdown" data-toggle="dropdown">
-                      <img src="assets/images/flags/Ind.png" alt="en"> <span>IND-English</span>
+                      <img src="assets/images/flags/Ind.png" alt="en"> <span>Bharat</span>
                     </button>
                   </div>
                 </div>
@@ -77,7 +110,7 @@
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="assets2/IBG-SOLAR-LOGO_03.png" class="logo" style="width: 75px;" alt="logo">
+            <img src="assets2/Artboard 1 copy 4 (1).png" class="logo" style="width: 75px;" alt="logo">
           </a>
           <button class="navbar-toggler" type="button">
             <span class="menu-lines"><span></span></span>
@@ -88,7 +121,7 @@
                 <a href="index.html" class="nav__item-link active">Home</a>
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
-                <a href="about-us.html" class="nav__item-link">Company</a>
+                <a class="nav__item-link" style="cursor: pointer;">Company</a>
                 <button class="dropdown-toggle" data-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
@@ -96,6 +129,9 @@
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
                     <a href="how-it-works.html" class="nav__item-link">How It Works</a>
+                  </li><!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="process.html" class="nav__item-link">Process</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
                     <a href="team.html" class="nav__item-link">Leadership Team</a>
@@ -115,27 +151,22 @@
                   <li class="nav__item">
                     <a href="careers.html" class="nav__item-link">Careers</a>
                   </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="shop.html" class="nav__item-link">Shop</a>
-                  </li><!-- /.nav-item -->
+                   
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
                 <a href="services.html" class="nav__item-link">Services</a>
                 <button class="dropdown-toggle" data-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="pre-feasibility.html" class="nav__item-link">Pre-Feasibility</a></li>
+                  <li class="nav__item"><a href="utility-scale-solar-projects.html" class="nav__item-link">Utility Scale Solar</a></li>
                   <!-- /.nav-item -->
-                  <li class="nav__item"><a href="feasibility.html" class="nav__item-link">Feasibility</a></li>
+                  <li class="nav__item"><a href="rooftop-solar.html" class="nav__item-link">Rooftop Solar</a></li>
                   <!-- /.nav-item -->
-                  <li class="nav__item"><a href="pre-construction.html" class="nav__item-link">Pre-Construction</a></li>
+                  <li class="nav__item"><a href="module-mounting.html" class="nav__item-link">Module Mounting</a></li>
                   <!-- /.nav-item -->
-                  <li class="nav__item"><a href="construction.html" class="nav__item-link">Construction</a></li>
+                  <li class="nav__item"><a href="drone-monitoring.html" class="nav__item-link">Drone Monitoring</a></li>
                   <!-- /.nav-item -->
-                  <li class="nav__item"><a href="ops-maintainance.html" class="nav__item-link">Ops & Maintainance</a>
-                  </li>
-                  <!-- /.nav-item -->
-                  <li class="nav__item"><a href="strategic-advisory.html" class="nav__item-link">Strategic Advisory</a>
+                  <li class="nav__item"><a href="automation-in-solar-plants.html" class="nav__item-link">Automation In Solar Plants</a>
                   </li>
                   <!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
@@ -144,7 +175,10 @@
                 <a href="projects-grid.html" class="nav__item-link">Projects</a>
                 <button class="dropdown-toggle" data-toggle="dropdown"></button>
                 <ul class="dropdown-menu">
-                  <li class="nav__item"><a href="projects-grid.html" class="nav__item-link">our Projects</a></li>
+                  <li class="nav__item"><a href="Adani-Solar-Project.html" class="nav__item-link">Adani Solar Project</a></li>
+                  <li class="nav__item"><a href="Welspun-Solar-Project.html" class="nav__item-link">Welspun Solar Project</a></li>
+                  <li class="nav__item"><a href="Tata-Solar-Power-Project.html" class="nav__item-link">Tata Solar Power Project</a></li>
+                  <li class="nav__item"><a href="Mahindra-Solar-System-Project.html" class="nav__item-link">Mahindra Solar Project</a></li>
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item has-dropdown">
@@ -157,17 +191,17 @@
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
           </div><!-- /.navbar-collapse -->
           <div class="contact__number d-none d-xl-flex align-items-center">
-            <i class="icon-phone"></i>
-            <a href="tel:919730856363" style="color:#e5b105;">+91 9730856363</a>
+            <i class="fa-solid fa-phone fa-shake " style="color: #ffffff;font-size: x-large;"></i>
+            <a href="tel:919730856363" style="color: #ffffff;">+91 9730856363</a>
           </div>
           <ul class="navbar-actions d-none d-xl-flex align-items-center list-unstyled mb-0">
             <li>
-              <a href="#" class="action__btn action__btn-cart">
-                <i class="icon-cart"></i>
+              <a href="shop.html" class="shop-btn">
+                 <i class="fa-solid fa-shop fa-xl"></i>
               </a><!-- /.cart-minipopup -->
             </li>
             <li id="quote-button-tag"> 
-              <a href="request-quote.html" class="btn btn__primary" >
+              <a href="request-quote.html" class="btn btn_rqst_qt" >
                 <span class="quote-button">Request A Quote</span>
                 <i class="icon-arrow-right"></i>
               </a>
@@ -180,7 +214,7 @@
     <!-- ============================
         Slider
     ============================== -->
-    <section  class="slider" style="transform: translateY(-50px)!important;">
+    <section class="slider" style="transform: translateY(-50px)!important;">
       <div class="slick-carousel carousel-arrows-light carousel-dots-light m-slides-0"
         data-slick='{"slidesToShow": 1, "arrows": true, "dots": true, "speed": 700,"fade": true,"cssEase": "linear"}'>
         <div class="slide-item align-v-h bg-overlay bg-overlay-2">
@@ -229,10 +263,11 @@
       </div><!-- /.carousel -->
     </section><!-- /.slider -->
 
+    
     <!-- ========================
       About Layout 1
     =========================== -->
-    <section id="section" class="about-layout1 pt-5 pb-130" style="margin-top: 0 !important;">
+    <section class="about-layout1 pt-5 pb-130" style="margin-top: 0 !important;">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-7 offset-lg-1">
@@ -307,7 +342,7 @@
     <!-- ====================== 
     services Layout 2
     ========================= -->
-    <section id="section" class="services-layout2 pt-100">
+    <section id="section" id="section" class="services-layout2 pt-100">
       <div class="bg-img" >
         <img src="assets/images/backgrounds/5.jpg" alt="background"></div>
       <div class="container">
@@ -440,7 +475,7 @@
     <!-- ======================
     Features Layout 2
     ========================= -->
-    <section id="section" class="features-layout2 pt-120">
+    <section id="section" id="section" class="features-layout2 pt-120">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-5">
@@ -536,7 +571,7 @@
     <!-- ====================== 
    portfolio Layout 3
     ========================= -->
-    <section id="section" class="portfolio-layout3 portfolio-carousel pt-120">
+    <section id="section" id="section" class="portfolio-layout3 portfolio-carousel pt-120">
       <div class="bg-img"><img src="assets/images/backgrounds/5.jpg" alt="background"></div>
       <div class="container">
         <div class="row mb-60">
@@ -719,10 +754,11 @@
       </div><!-- /.container -->
     </section><!-- /.portfolio Layout 3 -->
 
+
     <!-- ======================
     Testimonials 
     ========================= -->
-    <section id="section" class="testimonials-layout1 pb-0">
+    <section id="section" id="section" class="testimonials-layout1 pb-0">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
@@ -795,238 +831,11 @@
                 </div>
               </div><!-- /.testimonial-panel -->
             </div><!-- /. testimonial-box -->
-            <!-- Testimonial #6 --><!-- /. testimonial-box -->
             <!-- /.testimonial-panel -->
-            </div><!-- /. testimonial-box -->
           </div><!-- /.col-12 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- /.testimonials -->
-
-    <!-- ======================
-    Cta Layout1 
-    ========================= -->
-    <section id="section" class="cta-layout1 pt-0 mt-30">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <div class="cta__item d-flex">
-              <div class="cta__icon custom-icon">
-                <i class="icon-solar-panel"></i>
-              </div><!-- /.cta__icon -->
-              <div class="cta__body">
-                <h4 class="cta__title">Design & Shipping</h4>
-                <p class="cta__desc">We work with you to design and deliver a bespoke solar system that precisely fits your energy needs while selecting the best equipment for optimal performance and efficiency.</p>
-                <a href="request-quote.html" class="btn btn__link btn__primary">
-                  <i class="icon-arrow-right"></i>
-                  <span>Schedule A Visit</span>
-                </a>
-              </div><!-- /.cta__body -->
-            </div><!-- /.cta__item -->
-          </div><!-- /.col-md-6 -->
-          <div class="col-sm-12 col-md-6">
-            <div class="cta__item d-flex">
-              <div class="cta__icon custom-icon">
-                <i class="icon-energy"></i>
-              </div><!-- /.cta__icon -->
-              <div class="cta__body">
-                <h4 class="cta__title">Contract & Install</h4>
-                <p class="cta__desc">Whether you prefer a DIY approach or want to hire local contractors, we provide end-to-end support for a hassle-free solar contracting and installation experience.</p>
-                <a href="request-quote.html" class="btn btn__link btn__primary">
-                  <i class="icon-arrow-right"></i>
-                  <span>Schedule A Visit</span>
-                </a>
-              </div><!-- /.cta__body -->
-            </div><!-- /.cta__item -->
-          </div><!-- /.col-md-6 -->
-        </div><!-- /.cta -->
-        <div class="row">
-          <div class="col-12">
-            <p class="text__link text-center mb-0">Discover independence through the power of solar,
-              <a href="pricing.html">
-                <span>Explore Our Plans</span> <i class="icon-arrow-right"></i>
-              </a>
-            </p>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.cta layout1 -->
-
-    <!-- =========================== 
-      contact layout 2
-    ============================= -->
-    <section id="section" class="contact-layout2 pb-0 bg-overlay bg-overlay-primary-gradient" style="">
-      <div class="bg-img"><img src="assets/images/home/solar-8244679_1920.jpg" alt=""></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <div class="col-inner">
-              <div class="heading-layout2 heading-light mb-60">
-                <h3 class="heading__title">Save Money And The Environment With IBG Solar!
-                </h3>
-                <p class="heading__desc">Our solar business has become the preferred channel partner for top Indian PV solar players like TATA, AVADA, WELSPUN, ADANI and many others.
-                </p>
-              </div><!-- /.heading -->
-              <div class="row fancybox-light">
-                <!-- fancybox item #1 -->
-                <div class="col-sm-4">
-                  <div class="fancybox-item">
-                    <div class="fancybox__icon">
-                      <i class="icon-biosphere2"></i>
-                    </div><!-- /.fancybox-icon -->
-                    <div class="fancybox__content">
-                      <h4 class="fancybox__title mb-0">Environmental Sensitivity</h4>
-                    </div><!-- /.fancybox-content -->
-                  </div><!-- /.fancybox-item -->
-                </div><!-- /.col-sm-4 -->
-                <!-- fancybox item #2 -->
-                <div class="col-sm-4">
-                  <div class="fancybox-item">
-                    <div class="fancybox__icon">
-                      <i class="icon-tube"></i>
-                    </div><!-- /.fancybox-icon -->
-                    <div class="fancybox__content">
-                      <h4 class="fancybox__title mb-0">Personalised Solutions</h4>
-                    </div><!-- /.fancybox-content -->
-                  </div><!-- /.fancybox-item -->
-                </div><!-- /.col-sm-4 -->
-                <!-- fancybox item #3 -->
-                <div class="col-sm-4">
-                  <div class="fancybox-item">
-                    <div class="fancybox__icon">
-                      <i class="icon-electric-charge"></i>
-                    </div><!-- /.fancybox-icon -->
-                    <div class="fancybox__content">
-                      <h4 class="fancybox__title mb-0">Performance Measures</h4>
-                    </div><!-- /.fancybox-content -->
-                  </div><!-- /.fancybox-item -->
-                </div><!-- /.col-sm-4 -->
-              </div><!-- /.row -->
-            </div>
-          </div><!-- /.col-xl-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <div class="contact-panel">
-              <form class="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm"
-                novalidate="novalidate">
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 col-lg-12">
-                    <h4 class="contact-panel__title">Request A Quote</h4>
-                  </div> <!-- /.col-lg-12 -->
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
-                        required>
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email" id="contact-email"
-                        name="contact-email" required>
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Phone" id="contact-Phone"
-                        name="contact-phone">
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Address" id="contact-address"
-                        name="contact-address" required>
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-12">
-                    <span class="font-weight-bold color-heading d-block mb-15 mt-10">System Data</span>
-                  </div><!-- /.col-12 -->
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="0">System Installer?</option>
-                        <option value="1">System Installer 1</option>
-                        <option value="1">System Installer 2</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="0">System Installer?</option>
-                        <option value="1">System Installer 1</option>
-                        <option value="1">System Installer 2</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="0">Monthly electric usage ?</option>
-                        <option value="1">100</option>
-                        <option value="2">200</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="0">Solar system type?</option>
-                        <option value="1">Solar system 1</option>
-                        <option value="2">Solar system 2</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="0">Solar panels place?</option>
-                        <option value="1">Solar panels 1</option>
-                        <option value="2">Solar panels 2</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-sm-6">
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="0">Materials on your roof?</option>
-                        <option value="1">Materials 1</option>
-                        <option value="2">Materials 2</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-sm-6 -->
-                  <div class="col-12">
-                    <span class="font-weight-bold color-heading d-block mb-15 mt-10">Preferred Contact Method</span>
-                    <div class="d-flex">
-                      <div class="form-group input-radio mr-30">
-                        <label class="label-radio">All
-                          <input type="radio" name="contact" checked>
-                          <span class="radio-indicator"></span>
-                        </label>
-                      </div><!-- /.input-radio -->
-                      <div class="form-group input-radio mr-30">
-                        <label class="label-radio">Email
-                          <input type="radio" name="contact">
-                          <span class="radio-indicator"></span>
-                        </label>
-                      </div><!-- /.input-radio -->
-                      <div class="form-group input-radio">
-                        <label class="label-radio">Phone
-                          <input type="radio" name="contact">
-                          <span class="radio-indicator"></span>
-                        </label>
-                      </div><!-- /.input-radio -->
-                    </div>
-                    <button type="submit" class="btn btn__secondary btn__block">
-                      <i class="icon-arrow-right"></i> <span>Submit Request</span>
-                    </button>
-                    <div class="contact-result"></div>
-                  </div><!-- /.col-12 -->
-                </div><!-- /.row -->
-              </form>
-            </div>
-          </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.contact layout 2 -->
 
     <!-- =====================
          Clients
@@ -1065,102 +874,6 @@
     <!-- ======================
       Blog Grid
     ========================= -->
-    <section id="section" class="post-grid pb-60">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-50">
-              <h2 class="heading__subtitle">News & Announcements</h2>
-              <h3 class="heading__title">Recent Articles</h3>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <!-- Post Item #1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog1.html">
-                  <img src="assets/images/blog/Blog_Blog 1.jpg" alt="post image" loading="lazy">
-                </a>
-                <span class="post__date">July 20, 2023</span>
-              </div><!-- /.post-img -->
-              <div class="post__body">
-                <div class="post__meta d-flex align-items-center">
-                  <div class="post__cat">
-                    <a href="blog.html">Latest Blogs</a>
-                  </div><!-- /.post-meta-cat -->
-                  <a class="post__author" >Monica</a>
-                </div><!-- /.post-meta -->
-                <h4 class="post__title"><a href="blog1.html">How India Is Leading The Clean Energy Transition With Solar Power
-                  </a></h4>
-                <p class="post__desc">India is rapidly expanding its solar energy capacity and has become one of the world's largest producers of electricity. The country's solar energy capacity...</p>
-
-                <a href="blog1.html" class="btn btn__secondary btn__outlined btn__custom">
-                  <i class="icon-arrow-right"></i>
-                  <span>Read More</span>
-                </a>
-              </div><!-- /.post-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Post Item #2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog2.html">
-                  <img src="assets/images/blog/Blog_Blog 2.jpg" alt="post image" loading="lazy">
-                </a>
-                <span class="post__date">July 20, 2023</span>
-              </div><!-- /.post-img -->
-              <div class="post__body">
-                <div class="post__meta d-flex align-items-center">
-                  <div class="post__cat">
-                    <a href="blog.html">Latest Blogs</a>
-                  </div><!-- /.post-meta-cat -->
-                  <a class="post__author" >Monica</a>
-                </div><!-- /.post-meta -->
-                <h4 class="post__title"><a href="blog2.html">The Significance Of Solar Power In Today's World
-                  </a></h4>
-                <p class="post__desc">Solar power is an excellent investment for homeowners and businesses looking to reduce their energy costs and carbon footprint. However, maximizing the efficiency of your solar panels is crucial to achieving...
-                </p>
-                <a href="blog2.html" class="btn btn__secondary btn__outlined btn__custom">
-                  <i class="icon-arrow-right"></i>
-                  <span>Read More</span>
-                </a>
-              </div><!-- /.post-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Post Item #3 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog3.html">
-                  <img src="assets/images/blog/Blog_Blog 3.jpg" alt="post image" loading="lazy">
-                </a>
-                <span class="post__date">July 20, 2023</span>
-              </div><!-- /.post-img -->
-              <div class="post__body">
-                <div class="post__meta d-flex align-items-center">
-                  <div class="post__cat">
-                    <a href="blog.html">Latest Blogs</a>
-                  </div><!-- /.post-meta-cat -->
-                  <a class="post__author" >Monica</a>
-                </div><!-- /.post-meta -->
-                <h4 class="post__title"><a href="blog3.html">7 Tips And Strategies To Enhance Solar Panel Efficiency
-                  </a></h4>
-                <p class="post__desc">Department of Energy, which is why we have funded six teams to improve
-                  technologies that will protect eagles sharing airspace with the new wind ...
-                </p>
-                <a href="blog3.html" class="btn btn__secondary btn__outlined btn__custom">
-                  <i class="icon-arrow-right"></i>
-                  <span>Read More</span>
-                </a>
-              </div><!-- /.post-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.blog Grid -->
 
     <!-- ========================
       Footer
@@ -1266,13 +979,13 @@
         </div><!-- /.container -->
       </div><!-- /.footer-copyrights-->
     </footer><!-- /.Footer -->
-    <button id="scrollTopBtn"><i class="fas fa-long-arrow-alt-up"></i></button>
+    <button id="scrollTopBtn"><i class="fa-solid fa-up-long fa-bounce"></i></button>
+
   </div><!-- /.wrapper -->
 
   <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
