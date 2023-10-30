@@ -51,17 +51,20 @@ function saveQuote()
         console.log('Error:', error);
       });
 
-      Email.send({ 
-        Host: "javaibg@gmail.com", 
-        Username: "javaibg@gmail.com", 
-        Password: "javaibg@123", 
-        To: 'developerdv09@gmail.com', 
-        From: "javaibg@gmail.com", 
-        Subject: "Sending Email using javascript", 
-        Body: "Well that was easy!!", 
-      }) 
-        .then(function (message) { 
-          alert("mail sent successfully") 
-        }); 
+
+
+      
+      emailjs.init("i5QBhZOKLg9zRaUEs"); // Replace with your Email.js user ID
+
+      emailjs.send("service_nxxfdbr", "template_vvxera5", {
+            username: document.getElementById('contact-name').value,
+            to: document.getElementById('contact-email').value,
+          })
+          .then(function(response) {
+              console.log("Email sent successfully", response);
+          })
+          .catch(function(error) {
+              console.error("Email could not be sent", error);
+          });
 }
 
