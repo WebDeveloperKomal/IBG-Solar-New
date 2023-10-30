@@ -50,5 +50,18 @@ function saveQuote()
         // Handle errors, including the 406 (Not Acceptable) error
         console.log('Error:', error);
       });
+
+      Email.send({ 
+        Host: "javaibg@gmail.com", 
+        Username: "javaibg@gmail.com", 
+        Password: "javaibg@123", 
+        To: 'developerdv09@gmail.com', 
+        From: "javaibg@gmail.com", 
+        Subject: "Sending Email using javascript", 
+        Body: "Well that was easy!!", 
+      }) 
+        .then(function (message) { 
+          alert("mail sent successfully") 
+        }); 
 }
 
